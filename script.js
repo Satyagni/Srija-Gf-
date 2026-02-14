@@ -45,7 +45,7 @@ const getRandomNumber = (num) => {return Math.floor(Math.random() * (num + 1));}
     playSound('./sounds/click.mp3');
     if (noClickCount < 4) {
       noClickCount++;
-      imageDisplay.src = imagePaths[noClickCount] || "./images/image1.gif";
+      imageDisplay.src = imagePaths[noClickCount] || "./images/1.jpg";
   
       //yes button gets thicc
       buttonHeight += 35; buttonWidth += 35; fontSize += 25;
@@ -59,7 +59,7 @@ const getRandomNumber = (num) => {return Math.floor(Math.random() * (num + 1));}
       if (noClickCount === 4) {
         const newButton = document.createElement("button");
         newButton.id = "runawayButton";
-        newButton.textContent = "Say yes or else...";
+        newButton.textContent = "Ha bol na bara";
         newButton.style.position = "absolute";
         const yesButtonRect = yesButton.getBoundingClientRect();
         newButton.style.top = `${yesButtonRect.bottom + 10}px`;
@@ -156,3 +156,4 @@ const getRandomNumber = (num) => {return Math.floor(Math.random() * (num + 1));}
   }
 
   
+
