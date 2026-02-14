@@ -11,7 +11,7 @@ let noClickCount = 0;
 let buttonHeight = 48;
 let buttonWidth = 80;
 let fontSize = 20;
-const imagePaths = ['./images/image1.gif','./images/image2.gif','./images/image3.gif','./images/image4.gif','./images/image5.gif','./images/image6.gif','./images/image7.gif'];
+const imagePaths = ['./images/1.jpg','./images/2.jpg','./images/3.jpg','./images/4.jpg','./images/5.jpg','./images/image6.gif','./images/image7.gif'];
 
 //sound
 function playSound(soundPath) {const audio = new Audio(soundPath); audio.play();}
@@ -54,7 +54,7 @@ const getRandomNumber = (num) => {return Math.floor(Math.random() * (num + 1));}
       yesButton.style.fontSize = `${fontSize}px`;
   
       //no button text
-      const messages = ["No","Are you sure?","Babyy please?","Don't do this to me :(","Say yes or else...",];
+      const messages = ["No","Are you sure?","Babyy please?","Mat kar yaar :(","Ha bol na bara",];
   
       if (noClickCount === 4) {
         const newButton = document.createElement("button");
@@ -92,7 +92,7 @@ const getRandomNumber = (num) => {return Math.floor(Math.random() * (num + 1));}
     valentineQuestion.innerHTML = `
       <img src="./images/image7.gif" alt="Celebration duckie" style="display: block; margin: 0 auto; width: 200px; height: auto;"/>
       Congratulations!!<br>
-      <span style="font-size: 20px; color: #bd1e59;">You have scored a baddie for Valentine's Day! <3</span>
+      <span style="font-size: 20px; color: #bd1e59;">Omg am i ur valentine baddie naki sala</span>
     `;
     valentineQuestion.style.textAlign = "center"; 
   
@@ -154,4 +154,5 @@ const getRandomNumber = (num) => {return Math.floor(Math.random() * (num + 1));}
   
     move();
   }
+
   
